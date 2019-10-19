@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "JobService";
+}
+
+<h2>JobService</h2>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+
+    <input type="button" title="HttpSeviceRequest" value="GetAllJobListViaHTTP" onclick="location.href='@Url.Action("HTTPRequest", "Service")'" />
+    
+    <div>
+
+        <form action="HTTPRequestByID" method="post">
+            <table>
+                <tr>
+                    <td>Enter jOBnAME: </td>
+                    <td><input type="text" name="jobName" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit Form" />
+                        </td>
+                    </tr>
+                </table>
+</form>
+</div>
+   
+</body>
+</html>
